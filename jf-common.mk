@@ -46,6 +46,10 @@ PRODUCT_COPY_FILES += \
     device/samsung/jf-common/etc/apns-conf.xml:system/etc/apns-conf.xml \
     device/samsung/jf-common/etc/spn-conf.xml:system/etc/spn-conf.xml
 
+# Selective SPN list for operator number who has the problem.
+PRODUCT_COPY_FILES += \
+    device/samsung/jf-common/etc/selective-spn-conf.xml:system/etc/selective-spn-conf.xml
+
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8960
